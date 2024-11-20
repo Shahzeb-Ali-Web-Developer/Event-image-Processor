@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  max-width: 1200px; /* Increased container width */
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Upload Section Styling */
+.upload-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.upload-field {
+  flex: 1; /* Ensures all fields are evenly spaced */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-field label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.upload-field input[type="file"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  transition: all 0.3s ease;
+  width: 90%; /* Ensures consistent input field width */
+}
+
+input[type="file"]:hover {
+  border-color: #3498db;
+  background-color: #ecf6fd;
+}
+
+/* Button Styling */
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Status Message */
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2ecc71;
+}
+
+/* Two-Column Layout */
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.instructions,
+.about-developer {
+  flex: 1;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Instructions Styling */
+.instructions ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+/* Developer Section Styling */
+.about-developer {
+  text-align: center;
+}
+
+.developer-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #363034;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2980b9;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upload-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .two-column-layout {
+    flex-direction: column;
+  }
+
+  .instructions,
+  .about-developer {
+    margin-bottom: 20px;
+  }
+}

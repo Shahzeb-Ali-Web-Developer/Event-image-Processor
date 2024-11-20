@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Batch Processor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Main Heading -->
+    <h1>Event Images Batch Processor</h1>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <div class="upload-field">
+        <label for="imageZip">📁 Event Images:</label>
+        <input type="file" id="imageZip" accept=".zip">
+      </div>
+      <div class="upload-field">
+        <label for="uniLogo">🏫 University Logo:</label>
+        <input type="file" id="uniLogo" accept="image/*">
+      </div>
+      <div class="upload-field">
+        <label for="chapterLogo">🌟 Chapter Logo:</label>
+        <input type="file" id="chapterLogo" accept="image/*">
+      </div>
+    </div>
+
+    <!-- Process Button -->
+    <button id="processBtn">Process Images</button>
+
+    <!-- Status Message -->
+    <p id="status"></p>
+
+    <!-- Two-Column Layout -->
+    <div class="two-column-layout">
+      <!-- Instructions Section -->
+      <div class="instructions">
+        <h2>How to Use</h2>
+        <ul>
+          <li>Upload a ZIP file containing event images (JPEG/PNG format).</li>
+          <li>Upload a transparent university logo (PNG format).</li>
+          <li>Upload a transparent chapter logo (PNG format).</li>
+          <li>Click the <strong>Process Images</strong> button to generate a new ZIP file with the logos applied.</li>
+		  <li>Share the downloaded event images! Made with ❤️ by Shahzeb Ali.</li>
+		</ul>
+      </div>
+
+      <!-- About Developer Section -->
+      <div class="about-developer">
+	    <h2>About Developer</h2>
+        <img src="shahzeb.png" alt="Shahzeb Ali" class="developer-photo">
+        <h3><strong>Shahzeb Ali</strong></h3>
+        <p>Microsoft Beta Student Ambassador</p>
+        <p>Data Science Student at University of the Punjab</p>
+        <div class="social-links">
+          <a href="https://github.com/Shahzeb-Ali-Web-Developer" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/shahzeb2001" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip-utils/dist/jszip-utils.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pica/dist/pica.min.js"></script>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
